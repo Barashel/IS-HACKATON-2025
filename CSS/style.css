@@ -1,3 +1,32 @@
-body{
+body, nav{
     background-color: skyblue;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+h1{
+    color: navy;
+}
+p{
+    font-size: 16px;
+    color: darkslategray;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    margin-top: 20px;
 }
