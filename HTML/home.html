@@ -7,94 +7,157 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navigation-menu">
-            <div class="parent-menu">
-                <div class="acceuil">
-                    <li><a href="home.html">Accueil</a></li>
+    <header class="navbar">
+                <div class="logo">
+                    <img src="../IMAGES/EPLogo.png" alt="Logo EPL Academy">
                 </div>
-                <div class="a-propos">
-                    <li><a href="about.html">À propos de nous </a></li>
+                <div class="nav-links">
+                    <a href="home.html">Accueil</a>
+                    <a href="studenTools.html">StudenTools</a>
+                    <a href="announcements.html">Announces</a>
+                    <a href="gifts.html">Cadeaux</a>
+                    <a href="games.html">Jeux</a>
+                    <a href="about.html">À propos de nous </a>
                 </div>
-                <div class="annonces">
-                    <li><a href="announcements.html">announcements</a></li>
-                </div>
-                <div class="outils">
-                    <li><a href="studenTools.html">studenTools</a></li>
-                </div>
-                <div class="Cadeaux">
-                    <li><a href="gifts.html">Cadeaux</a></li>
-                </div>
-                <div class="jeux">
-                    <li><a href="games.html">Jeux</a></li>
-                </div>
-                
             </div>
         </nav>
     </header>
     <main>
-        <!--Création du conteur-->
-        <div class="image-conteneur">
-                <!-- 1er code qui affiche l'image et la citation qui vonst tous passer après quelques secondes -->
-            <div class="complet1">
-                <div class="image1">
-                    <img src="../IMAGES/Image1.jpg" alt="image 1">
-                </div>
-                <div class="texte1">
-                    <div class="ciation">
-                        <h2>Le travail éloigne de l'homme trois maux : l'ennui, le vice et le besoin.</h2>
-                    </div class="auteur">  
-                    <div>
-                        <p>- Voltaire</p>
-                </div>
-            <!-- 2eme code qui affiche l'image et la citation qui vonst tous passer après quelques secondes -->
-            <div class="complet2">
-                    <img src="../IMAGES/Image2.jpg" alt="image 2">
-                </div>
-                <div class="texte2">
-                    <div class="citation"> 
-                        <h2>L'ingénierie est l'art de faire ce qui a été fait auparavant, mais mieux. </h2>
-                    </div>  
-                    <div class="auteur">
-                        <p>- Henry Petroski</p>
-                </div>
-            <!-- 3eme code qui affiche l'image et la citation qui vonst tous passer après quelques secondes -->
-            <div class="complet3">
-                    <img src="../IMAGES/Image3.jpg" alt="image 3">
-                </div>
-                <div class="texte3">
-                    <div class="citation">
-                        <h2>La créativité est l'intelligence qui s'amuse. </h2>
-                    </div>  
-                    <div class="auteur">
-                        <p>- Albert Einstein</p>
+        <!-- Carrousel Hero Section -->
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="slide-image">
+                        <img src="../IMAGES/Image7.jpg" alt="Le travail">
+                    </div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Le travail éloigne de l'homme trois maux : l'ennui, le vice et le besoin.</h1>
+                        <p class="slide-author">- Voltaire</p>
+                        <a href="studenTools.html" class="cta-button">StudenTools</a>
+                    </div>
                 </div>
 
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="../IMAGES/Image8.jpg" alt="L'ingénierie">
+                    </div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">L'ingénierie est l'art de faire ce qui a été fait auparavant, mais mieux.</h1>
+                        <p class="slide-author">- Henry Petroski</p>
+                        <a href="games.html" class="cta-button">Jeux</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="../IMAGES/Image5.jpg" alt="La créativité">
+                    </div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">La créativité est l'intelligence qui s'amuse.</h1>
+                        <p class="slide-author">- Albert Einstein</p>
+                        <a href="about.html" class="cta-button">À propos de nous</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="../IMAGES/Image6.jpg" alt="Le génie">
+                    </div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Le génie est un pour cent d'inspiration et quatre-vingt-dix-neuf pour cent de transpiration.</h1>
+                        <p class="slide-author">- Thomas Edison</p>
+                        <a href="home.html" class="cta-button">Accueil</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- 4eme code qui affiche l'image et la citation qui vonst tous passer après quelques secondes -->
-            <div class="complet4">
-                    <img src="../IMAGES/Image4.jpg" alt="image 4">
-                </div>
-                <div class="texte4">
-                    <div class="citation">
-                        <h2>Le génie est un pour cent d'inspiration et quatre-vingt-dix-neuf pour cent de transpiration. </h2>
-                    </div>  
-                    <div class="auteur">
-                        <p>- Thomas Edison</p>
-                </div>
-
+            <!-- Indicateurs de navigation -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
             </div>
-        </div>
-        
+
+            <!-- Flèches de navigation -->
+            <button class="carousel-nav prev" aria-label="Précédent">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="carousel-nav next" aria-label="Suivant">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Section contenu supplémentaire -->
+        <section class="content-section">
+            <div class="container">
+                <h2>Bienvenue sur EPL Académie</h2>
+                <p>Votre espace numérique pour apprendre, évoluer et exceller</p>
+            </div>
+        </section>
     </main>
-    <main>
-        <div>
-            
+         <!-- Section Vision & Mission -->
+<section class="vision-mission-section">
+    <div class="vm-container">
+        <!-- Notre Vision -->
+        <div class="vm-card vision-card">
+            <div class="vm-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+            </div>
+            <h2 class="vm-title">Notre Vision</h2>
+            <p class="vm-description">
+                Créer une communauté académique innovante où chaque étudiant peut s'épanouir, 
+                développer ses talents et réaliser son plein potentiel à travers l'excellence 
+                éducative et l'accompagnement personnalisé.
+            </p>
         </div>
-    </main>
+
+        <!-- Notre Mission -->
+        <div class="vm-card mission-card">
+            <div class="vm-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+            </div>
+            <h2 class="vm-title">Notre Mission</h2>
+            <p class="vm-description">
+                EPL Académie accompagne les étudiants dans leur parcours éducatif en offrant 
+                des outils numériques innovants, des ressources pédagogiques de qualité et un 
+                environnement d'apprentissage stimulant pour bâtir un avenir prometteur.
+            </p>
+        </div>
+     </div>
+    </section>
     <footer>
-        
+        <div class="footer-conterneur">
+            <div class="footer-left">
+                <div>EPL Academy Université de Lomé - Togo</div>
+            </div>
+            <!--Fin fond-->
+            <div class="footer-top">
+                <div class="policy">
+                    <p>© 2025 eplacademy.tg  All rights reserved.</p>
+                    <p>Privacy PolicyTerms of Service</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Académie EPL-UL</h3>
+                    <p>Lomé - Togo</p>
+                </div>
+            </div>
     </footer>
+    <script src="../JAVASCRIPT/script.js" defer></script>
 </body>
 </html>
