@@ -5,177 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Accueil</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>StudenTools</title>
 </head>
 <body>
-    <nav>
-        <ul class = "nav_links">
-            <li>
-                <a href = "# cours.html" ><i class="fa-solid fa-book"></i> Course Sheet</a>
-                <ul>
-                    <li><a href = "#">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="#">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="#">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
+    <header class="navbar">
+                    <div class="logo">
+                        <img src="../IMAGES/EPLogo.png" alt="Logo EPL Academy">
+                    </div>
+                    <div class="nav-links">
+                        <a href="home.html">Accueil</a>
+                        <a href="studenTools.html">StudenTools</a>
+                        <a href="announcements.html">Announces</a>
+                        <a href="gifts.html">Cadeaux</a>
+                        <a href="games.html">Jeux</a>
+                        <a href="about.html">À propos de nous </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <!-- Section Further Education / Bannière -->
+<section class="further-education-section">
+    <div class="education-container">
+        <div class="education-content">
+            <div class="education-text">
+                <h2 class="education-title">EPL ACADEMY</h2>
+                <p class="education-description">
+                    Cette page a été conçue par et pour les étudiants, afin de vous accompagner au quotidien dans votre parcours académique.
+                    Vous y trouverez une sélection d’outils pratiques, ressources numériques et solutions intelligentes pour faciliter vos études,
+                    mieux vous organiser et améliorer vos performances.
+                </p>
+                <a href="#services" class="education-cta">
+                    Découvrir nos outils <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="education-image">
+                <img src="../IMAGES/Image10.jpg" alt="Further Education">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a>
-                        <p>Dans cette partie,nous vouq donnons la possibilité de trouver plusieurs cours sur différentes Unités d'ensignement</p>
-                        <ul>
-                            <li><a href="https://www.mcours.net/cours/pdf/hasclic1/hasclic104.pdf" target = "_blank"> cours 1  </a></li>
-                            <li><a href="https://fr.scribd.com/document/761463577/Cours-1-d-Algebre-Tensoriel" target = "_blank">Cours 2</a></li>
-                            <li><a href="/HTML/Algèbre Tensorielle">Cours-1-d-Algebre-Tensoriel</a></li>
-                        </ul>
-                    </li>
+<!-- Section Nos Services / Outils pour Étudiants -->
+<section class="services-section">
+    <!-- ... Votre code des services ici ... -->
+</section>
+    <!-- Section Nos Services / Outils pour Étudiants -->
+    <section class="services-section">
+        <div class="services-container">
+            <!-- En-tête de section -->
+            <div class="services-header">
+                <h2 class="services-main-title">Nos Outils pour Étudiants</h2>
+                <p class="services-subtitle">Des ressources complètes pour exceller dans vos études</p>
+            </div>
 
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
+            <!-- Grille des services -->
+            <div class="services-grid">
+                
+                <!-- Service 1: Course Sheet -->
+                <div class="service-card" data-service="courses">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="service-title">Course Sheet</h3>
+                    <p class="service-description">
+                        Accédez à des fiches de cours complètes et structurées pour toutes vos unités d'enseignement.
+                    </p>
+                    <button class="service-btn" data-modal="courses">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2: Solved Exercices -->
+                <div class="service-card" data-service="exercises">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-title">Solved Exercices</h3>
+                    <p class="service-description">
+                        Consultez des exercices corrigés détaillés pour mieux comprendre et maîtriser les concepts.
+                    </p>
+                    <button class="service-btn" data-modal="exercises">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3: Practice Exercices -->
+                <div class="service-card" data-service="practice">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="service-title">Practice Exercices</h3>
+                    <p class="service-description">
+                        Entraînez-vous avec des exercices pratiques pour consolider vos connaissances.
+                    </p>
+                    <button class="service-btn" data-modal="practice">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4: Interactive Quizzes -->
+                <div class="service-card" data-service="quizzes">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </div>
+                    <h3 class="service-title">Interactive Quizzes</h3>
+                    <p class="service-description">
+                        Testez vos connaissances avec des quiz interactifs et obtenez un feedback instantané.
+                    </p>
+                    <button class="service-btn" data-modal="quizzes">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5: Tutorial Videos -->
+                <div class="service-card" data-service="videos">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-play-circle"></i>
+                    </div>
+                    <h3 class="service-title">Tutorial Videos</h3>
+                    <p class="service-description">
+                        Apprenez avec des vidéos tutorielles explicatives sur tous les sujets du programme.
+                    </p>
+                    <button class="service-btn" data-modal="videos">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6: Support Chat -->
+                <div class="service-card" data-service="support">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">Support Chat</h3>
+                    <p class="service-description">
+                        Obtenez de l'aide instantanée grâce à notre système de chat d'assistance.
+                    </p>
+                    <button class="service-btn" data-modal="support">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 7: Integrated Notebook -->
+                <div class="service-card" data-service="notebook">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h3 class="service-title">Integrated Notebook</h3>
+                    <p class="service-description">
+                        Prenez des notes organisées directement dans votre espace d'apprentissage.
+                    </p>
+                    <button class="service-btn" data-modal="notebook">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 8: Simulation Tool -->
+                <div class="service-card" data-service="simulation">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="service-title">Simulation Tool</h3>
+                    <p class="service-description">
+                        Expérimentez avec des simulations interactives pour visualiser les concepts complexes.
+                    </p>
+                    <button class="service-btn" data-modal="simulation">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 9: Motivation System -->
+                <div class="service-card" data-service="motivation">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="service-title">Motivation System</h3>
+                    <p class="service-description">
+                        Gagnez des points et débloquez des récompenses en progressant dans vos études.
+                    </p>
+                    <button class="service-btn" data-modal="motivation">
+                        Explorer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales pour les listes déroulantes -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            <button class="modal-close" id="modalClose">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+            </div>
+            <div class="modal-body">
+                <ul class="course-list" id="courseList">
+                    <!-- Les cours seront injectés ici par JavaScript -->
                 </ul>
-            </li>
-            <li>
-                <a href = "# Exercices.html"><i class="fa-solid fa-lightbulb"></i> Solved exercices</a>
-                <ul>
-                  <li><a href = "#">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="#">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="#">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>  
-                </ul>
-            
-            </li>
-            <li>
-                <a href = "# Entrainement.html"><i class="fa-solid fa-book-open"></i> Practice Exercices</a>
-                <ul>
-                    <li><a href = "#">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="#">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="#'">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-            
-                </ul>
-            </li>
-            <li>
-                <a href = "# quizz.html"><i class="fa-solid fa-clipboard-question"></i> Interactives Quizze</a>
-                <ul>
-                    <li><a href = "#">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="#">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="#">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-            
-                </ul>
-            </li>
-            <li>
-                <a href = "#Tutoriels.html"><i class="fa-solid fa-play-circle"></i> Tutorial Videos</a>
-                <ul>
-                    <li><a href = "">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="/">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="/">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-            
-                </ul>
-            </li>
-            <li>
-                <a href = "#Aide_chat.html"><i class="fa-solid fa-headset"></i> Support Chat</a>
-                <ul>
-                    <li><a href = "/">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="/">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="/">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href = "#Notebook.html"><i class="fa-solid fa-pen-to-square"></i> Integrated Notebook</a>
-                <ul>
-                    <li><a href = "/">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="/">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="/">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href = "#Simulation.html"><i class="fa-solid fa-cube"></i> Simulation Tool</a>
-                <ul>
-                    <li><a href = "/">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="/">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="/">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href = "#Motivation.html"><i class="fa-solid fa-trophy"></i> Motivation System</a>
-                <ul>
-                    <li><a href = "/">PHY1320: Loi de la Thermodynamique</a> </li>
-                    <li><a href="/">2MTH1320: Intégration multiple et Généralisée</a> </li>
-                    <li><a href="/">1MTH1320: Séries</a></li>
-                    <li><a href="#">INF1321: Architecture des Ordinateurs</a></li>
-                    <li><a href="#">INF1320: Programmation Orientée Objet</a></li>
-                    <li><a href="#">MTH1322: Algèbre Tensorielle</a></li>
-                    <li><a href="#">1MTH1321: Probabilités</a></li>
-                    <li><a href="#">2MTH1321: Statistiques descriptives</a> </li>
-                    <li><a href="#">1SEG1320: Economie d'entreprise</a></li>
-                    <li><a href="#">2SEGA320: Comptabilité</a></li>
-                    <li><a href="#">1PHY1321: Optique géométrique</a></li>
-                    <li><a href="#">2PHY1321: Optique Ondulatoire</a></li>
-                </ul>
-            </li>
-      </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-conterneur">
+            <div class="footer-left">
+                <div>EPL Academy Université de Lomé - Togo</div>
+            </div>
+            <!--Fin fond-->
+            <div class="footer-top">
+                <div class="policy">
+                    <p>© 2025 eplacademy.tg  All rights reserved.</p>
+                    <p>Privacy PolicyTerms of Service</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Académie EPL-UL</h3>
+                    <p>Lomé - Togo</p>
+                </div>
+            </div>
+    </footer>
+    <script src="../JAVASCRIPT/tools.js" defer></script>
 </body>
 </html>
