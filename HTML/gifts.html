@@ -1,14 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>monCadeau</title>
+    <title>Mon Cadeau - EPL Académie</title>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- ✅ CSS corrigé -->
+    <link rel="stylesheet" href="../CSS/gifts.css">
 </head>
 <body>
-    <script src="../JAVASCRIPT/script.js"></script>
-    <di>
-        <h1>Joyeux Noël</h1>
-    </di>
+    <div class="background-transparent">
+    <!-- Particules de neige -->
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <!-- Section principale -->
+    <main class="gifts-container">
+        
+        <!-- Étape 1: Formulaire de saisie du nom -->
+        <section id="nameInputSection" class="section-visible">
+            <div class="gift-box-animation">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <h1 class="main-title">Mon Cadeau</h1>
+            <p class="subtitle">École Polytechnique de Lomé - Hackathon 2025</p>
+            
+            <div class="input-card">
+                <h2>Recevez votre affiche personnalisée !</h2>
+                <p class="description">
+                    Entrez votre nom pour recevoir une magnifique affiche de vœux 
+                    personnalisée que vous pourrez partager sur Facebook ou Instagram.
+                </p>
+                
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="studentName" 
+                        placeholder="Entrez votre nom ici..."
+                        maxlength="50"
+                        autocomplete="off"
+                    >
+                    <button id="generateBtn" class="btn-primary">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        Créer mon affiche
+                    </button>
+                </div>
+                
+                <p class="info-text">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Votre affiche sera générée instantanément et prête à télécharger
+                </p>
+            </div>
+        </section>
+
+        <!-- Étape 2: Génération et prévisualisation -->
+        <section id="previewSection" class="section-hidden">
+            <div class="confetti-animation"></div>
+            
+            <h2 class="section-title">✨ Votre affiche est prête ! ✨</h2>
+            
+            <div class="preview-card">
+                <div class="canvas-wrapper">
+                    <canvas id="posterCanvas"></canvas>
+                </div>
+                
+                <div class="preview-info">
+                    <p class="student-greeting">
+                        <i class="fa-solid fa-star"></i>
+                        Joyeux Noël, <strong id="displayName"></strong> !
+                    </p>
+                    
+                    <div class="download-options">
+                        <h3>Choisissez votre format :</h3>
+                        <div class="format-buttons">
+                            <button id="downloadFacebook" class="btn-download facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                Format Facebook
+                                <span class="format-size">1200x630px</span>
+                            </button>
+                            <button id="downloadInstagram" class="btn-download instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                Format Instagram
+                                <span class="format-size">1080x1080px</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button id="createAnotherBtn" class="btn-secondary">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        Créer une autre affiche
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 3: Interface festive après téléchargement -->
+        <section id="festiveSection" class="section-hidden">
+            <div class="celebration-animation">
+                <div class="firework"></div>
+                <div class="firework"></div>
+                <div class="firework"></div>
+            </div>
+            
+            <div class="festive-card">
+                <div class="success-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                
+                <h2 class="festive-title">🎉 Félicitations ! 🎉</h2>
+                <p class="festive-message">
+                    Votre affiche a été téléchargée avec succès !<br>
+                    Partagez votre joie de Noël avec le monde entier !
+                </p>
+                
+                <div class="share-options">
+                    <h3>Partagez maintenant :</h3>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn facebook" id="shareFacebook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-btn instagram" id="shareInstagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-btn whatsapp" id="shareWhatsapp" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                        <a href="#" class="social-btn twitter" id="shareTwitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="festive-stats">
+                    <div class="stat-item">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="stat-number" id="totalUsers">1,247</span>
+                        <span class="stat-label">Étudiants participants</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="stat-number" id="totalDownloads">3,891</span>
+                        <span class="stat-label">Affiches téléchargées</span>
+                    </div>
+                </div>
+                
+                <div class="festive-actions">
+                    <button id="backHomeBtn" class="btn-primary">
+                        <i class="fa-solid fa-home"></i>
+                        Retour à l'accueil
+                    </button>
+                    <button id="createNewBtn" class="btn-secondary">
+                        <i class="fa-solid fa-plus"></i>
+                        Créer une nouvelle affiche
+                    </button>
+                </div>
+                
+                <div class="festive-footer">
+                    <p>
+                        <i class="fa-solid fa-heart"></i>
+                        Créé avec amour par l'équipe du Hackathon EPL 2025
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bouton retour flottant -->
+    <a href="home.html" class="floating-back-btn" title="Retour à l'accueil">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <!-- ✅ JavaScript corrigé - AVANT </body> -->
+     </div>
+    <script src="gifts.js" defer></script>
 </body>
 </html>

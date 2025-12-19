@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>games</title>
+    <title>Jeux Éducatifs - EPL Académie</title>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-
+    <link rel="stylesheet" href="../CSS/games.css">
 </head>
 <body>
-    
+    <div class="background-transparent">
+    <!-- Particules -->
+    <div class="particles" id="particles"></div>
+
+   
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Jeux Éducatifs</h1>
+        <p>Apprenez en vous amusant avec notre collection de jeux éducatifs interactifs</p>
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Jeux disponibles</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Catégories</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Gratuit</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-category="all">
+                <i class="fa-solid fa-list"></i> Tous
+            </button>
+            <button class="filter-btn" data-category="math">
+                <i class="fa-solid fa-calculator"></i> Mathématiques
+            </button>
+            <button class="filter-btn" data-category="language">
+                <i class="fa-solid fa-language"></i> Langues
+            </button>
+            <button class="filter-btn" data-category="science">
+                <i class="fa-solid fa-flask"></i> Sciences
+            </button>
+            <button class="filter-btn" data-category="coding">
+                <i class="fa-solid fa-code"></i> Programmation
+            </button>
+            <button class="filter-btn" data-category="logic">
+                <i class="fa-solid fa-puzzle-piece"></i> Logique
+            </button>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Chargement du jeu...</p>
+        </div>
+
+        <!-- Games Grid -->
+        <div class="games-grid" id="gamesGrid">
+            <!-- Les jeux seront générés par JavaScript -->
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="home.html" class="back-btn" title="Retour à l'accueil">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+</div>
+    <script src="../JAVASCRIPT/games.js"></script>
 </body>
 </html>

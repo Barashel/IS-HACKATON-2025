@@ -115,11 +115,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Titres pour chaque service
     const serviceTitles = {
-        courses: 'Course Sheet',
-        exercises: 'Solved Exercices',
-        practice: 'Practice Exercices',
-        quizzes: 'Interactive Quizzes',
-        videos: 'Tutorial Videos',
+        courses: 'Documents Cours',
+        exercises: 'Exercices Résolus',
+        practice: "Exercices d'entraînement",
+        quizzes: 'Quizz Interactifs ',
+        videos: 'Tutoriels Videos',
         support: 'Support Chat',
         notebook: 'Integrated Notebook',
         simulation: 'Simulation Tool',
